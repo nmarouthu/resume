@@ -17,7 +17,8 @@ const About = (props) => {
         {"label": "Digital Content & Asset Management"},
         {"label": "Product Information Management & Ecommerce"},
         {"label": "Data Analytics & insights"},
-        {"label": "Learn and adapt to new Technologies"}
+        {"label": "Learn and adapt to new Technologies"},
+        {"label": "PoC's on Enhancements or new Featuers"}
     ]
 
     return (
@@ -29,7 +30,7 @@ const About = (props) => {
                 <div className="biodata">
                     <div className="photo-wrapper">
                         <img className="photo"
-                             src={`${process.env.PUBLIC_URL}/images/Naveena.jpg`}></img>
+                             src={`${process.env.PUBLIC_URL}/images/naveena.jpg`}></img>
                     </div>
                     <ul>
                         { bioDataAttributes && bioDataAttributes.map(dataItem => (
