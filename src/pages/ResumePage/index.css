@@ -4,8 +4,8 @@ body {
 
 section {
     width: 90%;
-    margin: auto;
-    margin-bottom: 2rem;
+    margin: 2rem auto;
+    padding: 2rem 0;
 }
 
 section .section-title {
