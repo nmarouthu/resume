@@ -1,0 +1,63 @@
+#about img {
+    width: 200px;
+    border-radius: 50%;
+    height: 188px;
+}
+
+#about > .wrapper {
+    display: flex;
+}
+
+#about .wrapper .biodata {
+    width: 30%;
+}
+
+#about .wrapper .summary {
+    width: 70%;
+}
+
+#about .wrapper .biodata {
+    margin-right: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid lightgray;
+}
+
+#about ul {
+    padding: 0;
+    list-style: none;
+}
+
+#about li {
+    padding: .65em 0;
+    display: flex;
+}
+
+#about li .label {
+    font-weight: bold;
+    width: 30%;
+}
+
+#about li .value {
+    width: 70%;
+}
+
+#about .details {
+    line-height: 1.7rem;
+}
+
+#about .key-skills ul{
+    display: inline-block;
+    width: 100%;
+}
+
+#about .key-skills ul li {
+    float: left;
+    width: 50%;
+}
+
+#about .key-skills li:before {
+    content: "\f00c";
+    font-family: fontawesome;
+    color: #008577;
+    margin-right: 10px;
+}
