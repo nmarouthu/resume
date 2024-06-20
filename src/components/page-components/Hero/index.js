@@ -14,7 +14,9 @@ const Hero = (props) => {
                     <p>14+ years experience building highly secured, scalable & highly available applications</p>
                 </div>
                 <div className="social">
-
+                    <a href="https://www.linkedin.com/in/naveena-marouthu-42347517/" target="_blank">
+                        <i className="fa-brands fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
         </Section>

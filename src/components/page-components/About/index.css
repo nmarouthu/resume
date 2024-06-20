@@ -16,6 +16,10 @@
     width: 70%;
 }
 
+#about .wrapper .summary .overview {
+    animation-name: fadeInUp;
+}
+
 #about .wrapper .biodata {
     margin-right: 1rem;
     padding-right: 1rem;

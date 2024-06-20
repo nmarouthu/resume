@@ -105,6 +105,10 @@
     margin-bottom: 1rem;
 }
 
+.timeline .content p {
+    margin-top: 0px;
+}
+
 @media(min-width:992px) {
     .timeline:before {
         left: 50%;

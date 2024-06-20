@@ -5,6 +5,7 @@ const Header = (props) => {
     const menuItems = [
         {"link": "#home", "displayName": "Home"},
         {"link": "#about", "displayName": "About"},
+        {"link": "#achievements", "displayName": "Achievements"},
         {"link": "#work", "displayName": "Work"},
         {"link": "#education", "displayName": "Education"},
         {"link": "#skills", "displayName": "Skills"},
