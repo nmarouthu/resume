@@ -11,6 +11,15 @@ const About = (props) => {
         {"label": "Email", "value": "Naveena.Marouthu@gmail.com"}
     ]
 
+    const keySkills = [
+        {"label": "System Design & Architecture"},
+        {"label": "Full Stack Developer"},
+        {"label": "Digital Content & Asset Management"},
+        {"label": "Product Information Management & Ecommerce"},
+        {"label": "Data Analytics & insights"},
+        {"label": "Learn and adapt to new Technologies"}
+    ]
+
     return (
         <Section {...props}>
             <div className="section-title">
@@ -18,9 +27,10 @@ const About = (props) => {
             </div>
             <div className="wrapper">
                 <div className="biodata">
-                    <img className="photo"
-                         src={`${process.env.PUBLIC_URL}/images/Naveena.jpg`}
-                    ></img>
+                    <div className="photo-wrapper">
+                        <img className="photo"
+                             src={`${process.env.PUBLIC_URL}/images/Naveena.jpg`}></img>
+                    </div>
                     <ul>
                         { bioDataAttributes && bioDataAttributes.map(dataItem => (
                             <li key={dataItem.label}>
@@ -43,10 +53,11 @@ const About = (props) => {
                         </div>
                         <div className="key-skills">
                             <ul>
-                                <li>Solution Architecting</li>
-                                <li>Web Design</li>
-                                <li>Systems Integration</li>
-                                <li>POC</li>
+                                { keySkills && keySkills.map(skillItem => (
+                                    <li key={skillItem.label}>
+                                        {skillItem.label}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </div>

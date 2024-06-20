@@ -18,3 +18,17 @@
 #interests .wrapper h3 {
     font-size: 1.25rem;
 }
+
+@media(max-width:767px) {
+    #interests .wrapper .items {
+        display: block;
+    }
+
+    #interests .wrapper .items .list-item {
+        margin-bottom: 3rem;
+    }
+
+    #interests .wrapper .items .list-item:last-child {
+        margin-bottom: 0;
+    }
+}

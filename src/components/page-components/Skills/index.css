@@ -67,3 +67,28 @@
 #skills .key-skills-wrapper .list-item .label {
     margin-top: 1rem;
 }
+
+@media(max-width:991px) {
+    #skills .wrapper .list .list-item {
+        width: 100%;
+        display: block;
+    }
+
+    #skills .wrapper .list .list-item .progress-bar {
+        width: 100%;
+    }
+}
+
+@media(max-width:767px) {
+    #skills .key-skills-wrapper {
+        display: grid;
+    }
+
+    #skills .key-skills-wrapper .list-item {
+        padding-bottom: 3rem;
+    }
+
+    #skills .key-skills-wrapper .list-item:last-child {
+        padding-bottom: 0px;
+    }
+}

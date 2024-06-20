@@ -109,6 +109,17 @@
     margin-top: 0px;
 }
 
+@media(max-width:991px) {
+    .education-timeline:before, .work-timeline:before, .education-timeline:after, .work-timeline:after, .timeline>li .timeline-info{
+        left: 0;
+    }
+
+    .timeline>li.timeline-inverted .timeline-panel .heading, .timeline>li.timeline-inverted .timeline-panel .content {
+        padding-left: 1rem;
+        padding-right: 5px;
+    }
+}
+
 @media(min-width:992px) {
     .timeline:before {
         left: 50%;
