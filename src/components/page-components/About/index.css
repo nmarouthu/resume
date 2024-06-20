@@ -67,7 +67,7 @@
     margin-right: 10px;
 }
 
-@media(max-width:1999px) {
+@media(max-width:1199px) {
     #about .biodata li {
         flex-direction: column;
     }
