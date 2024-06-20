@@ -29,6 +29,6 @@ header .global-nav-menu a {
     text-transform: uppercase;
 }
 
-header .global-nav-menu a:hover {
+header .global-nav-menu a:hover, header .global-nav-menu a.active {
     color: #008577;
 }

@@ -4,7 +4,7 @@ import './index.css';
 
 const Education = (props) => {
     const timelineEntries = [
-        {"timeline": "2005-2009", "title": "Bachelors Degree", "location": "Bachelors in Computer Science & Engineering, JNT University, Kakinada, India", "description": "Some description"},
+        {"timeline": "2005-2009", "title": "Bachelors Degree", "location": "Bachelors in Computer Science & Engineering, JNT University, Kakinada, India"},
     ]
 
     return (
@@ -22,7 +22,7 @@ const Education = (props) => {
                                     <h3>{timelineEntry.title}</h3>
                                     <span>{timelineEntry.location}</span>
                                 </div>
-                                <div className="content"><p>{timelineEntry.description}</p></div>
+                                {timelineEntry.description && <div className="content"><p>{timelineEntry.description}</p></div>}
                             </div>
                         </li>
                     ))}
