@@ -44,13 +44,13 @@ const About = (props) => {
                     <div className="overview fadeInUP">
                         <div className="sub-section-title"><h3>Overview</h3></div>
                         <div className="details">
-                            I&apos;ve Architected and Designed large scale technology & enterprise applications by identifying customer needs, designed programs, defined operational frameworks and executed ideas that solve problems and incite user engagement. As an individual, I&apos;m self-confident; you&apos;ll find me creative, funny and naturally passionate. I&apos;m a forward thinker, which others may find inspiring when working as a team.
+                            I&apos;ve Architected, designed & developed many large scale technology & enterprise applications by identifying customer needs, defining operational frameworks and executing ideas that solve problems effectively. As an individual, I&apos;m self-confident. You&apos;ll find me creative, funny and naturally passionate. I&apos;m a forward thinker, which others may find inspiring when working as a team.
                         </div>
                     </div>
                     <div className="roles-responsibilities fadeInUP">
                         <div className="sub-section-title"><h3>What I Do  ?</h3></div>
                         <div className="details">
-                            I&apos;m an Adobe certified AEM Architect with 8+ years of experience building complex solutions E2E using AEM on-prem, hybrid, cloud and full-headless mode(s) with customizations on top of AEM as necessary integrating with multiple Adobe Product Suite along with a strong co-innovation working directly with Adobe Engineering Team.
+                            I&apos;m an Adobe certified AEM Architect with 8+ years experience building complex solutions using AEM on-prem, hybrid, cloud and fully headless mode(s) with customizations on top of AEM as necessary by integrating with multiple Adobe Product Suites and enterprise services.
                         </div>
                         <div className="key-skills">
                             <ul>

@@ -11,7 +11,7 @@ const Hero = (props) => {
                     <div className="title">AEM <span>Architect</span></div>
                 </div>
                 <div className="summary">
-                    <p>14+ years experience building highly secured, scalable & highly available applications</p>
+                    <p>14+ years experience in architecting, designing and developing large scale technology & enterprise applications</p>
                 </div>
                 <div className="social">
                     <a href="https://www.linkedin.com/in/naveena-marouthu-42347517/" target="_blank">
