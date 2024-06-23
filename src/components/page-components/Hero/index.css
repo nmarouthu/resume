@@ -10,7 +10,7 @@
 
 @media(max-width:1199px) {
     #hero {
-        background-attachment: scroll;
+        background-attachment: scroll !important;
     }
 }
 
