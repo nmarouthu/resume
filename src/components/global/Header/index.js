@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import './index.css';
 
 const Header = (props) => {
+    const [navBarOpen, setNavBarOpen] = useState(false);
     const menuItems = [
         {"link": "#hero", "displayName": "Home"},
         {"link": "#about", "displayName": "About"},
@@ -45,6 +46,8 @@ const Header = (props) => {
     const handleMenuClick = (e) => {
         const element = document.getElementById(e.target.getAttribute("href").replace("#",""));
         if ( !element ) return;
+        document.getElementsByTagName("body")[0].classList.remove("no-scroll");
+        setNavBarOpen(false);
         window.scroll({
             top: element.offsetTop - 20,
             behavior: 'smooth'
@@ -52,17 +55,32 @@ const Header = (props) => {
         e.preventDefault();
     }
 
+    const handleHamburgerMenuClick = () => {
+        if (navBarOpen) {
+            document.getElementsByTagName("body")[0].classList.remove("no-scroll");
+        } else {
+            document.getElementsByTagName("body")[0].classList.add("no-scroll");
+        }
+        setNavBarOpen(!navBarOpen);
+    }
+
     return (
         <header className="header" {...props}>
-            <nav className="global-nav">
-                <ul className="global-nav-menu">
-                    { menuItems && menuItems.map(menuItem => (
-                        <li key={menuItem.link} className="global-nav-menu-item">
-                            <a href={`${menuItem.link}`} onClick={(e) => handleMenuClick(e)} >{menuItem.displayName}</a>
-                        </li>
-                    ))}
-                </ul>
+            <nav className={navBarOpen ? "global-nav is-open" : "global-nav"}>
+                <h3 className="title">Naveena Marouthu</h3>
+                <div className="global-nav-menu">
+                    <ul>
+                        { menuItems && menuItems.map(menuItem => (
+                            <li key={menuItem.link} className="global-nav-menu-item">
+                                <a href={`${menuItem.link}`} onClick={(e) => handleMenuClick(e)} >{menuItem.displayName}</a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </nav>
+            <div className={navBarOpen ? "nav-bar is-open" : "nav-bar"} onClick={() => handleHamburgerMenuClick()}>
+                <i className="fa-solid fa-bars"></i>
+            </div>
         </header>
     )
 }

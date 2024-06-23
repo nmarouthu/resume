@@ -68,7 +68,7 @@
     }
 
     #achievements .wrapper .items .list-item {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
     #achievements .wrapper .items .list-item:last-child {
@@ -81,6 +81,7 @@
 
     #achievements .wrapper h3 {
         font-size: 2rem;
+        margin-bottom: 0;
     }
 
     #achievements .wrapper p {

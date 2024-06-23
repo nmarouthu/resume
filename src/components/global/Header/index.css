@@ -11,7 +11,7 @@ header .global-nav {
     margin: auto;
 }
 
-header .global-nav-menu {
+header .global-nav-menu ul {
     list-style: none;
     display: flex;
     margin-block: 0;
@@ -31,4 +31,49 @@ header .global-nav-menu a {
 
 header .global-nav-menu a:hover, header .global-nav-menu a.active {
     color: #008577;
+}
+
+header .global-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .title {
+    margin-block: 0;
+}
+
+header .nav-bar {
+    display: none;
+}
+
+@media(max-width:767px) {
+    header {
+        display: flex;
+    }
+
+    header .nav-bar {
+        display: block;
+    }
+
+    header .global-nav .global-nav-menu {
+        display: none;
+    }
+
+    header .global-nav.is-open .global-nav-menu {
+        display: block;
+        position: absolute;
+        left: 0;
+        background: #fff;
+        top: 3.35rem;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    header .global-nav.is-open .global-nav-menu ul {
+        flex-direction: column;
+    }
+
+    header .global-nav.is-open .global-nav-menu ul li {
+        padding: 1rem;
+    }
 }
