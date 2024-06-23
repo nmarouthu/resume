@@ -8,6 +8,12 @@
     padding: 0px;
 }
 
+@media(max-width:1199px) {
+    #hero {
+        background-attachment: scroll;
+    }
+}
+
 #hero:before {
     content: "";
     background-color: rgba(26, 30, 35, 0.85);

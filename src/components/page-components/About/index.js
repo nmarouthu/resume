@@ -18,7 +18,7 @@ const About = (props) => {
         {"label": "Product Information Management & Ecommerce"},
         {"label": "Data Analytics & insights"},
         {"label": "Learn and adapt to new Technologies"},
-        {"label": "PoC's on Enhancements or new Featuers"}
+        {"label": "Innovative & Think beyond POC's"}
     ]
 
     return (
