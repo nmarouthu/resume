@@ -7,7 +7,7 @@ const About = (props) => {
         {"label": "Name", "value": "Naveena Marouthu"},
         {"label": "Experience", "value": "14 Years"},
         {"label": "Degree", "value": "Bachelors in Computer Science & Engineering"},
-        {"label": "Address", "value": "California, USA"},
+        {"label": "Lives in", "value": "California, USA"},
         {"label": "Email", "value": "Naveena.Marouthu@gmail.com"}
     ]
 
