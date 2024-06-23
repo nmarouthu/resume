@@ -9,7 +9,7 @@
 }
 
 @media(max-width:1199px) {
-    #hero {
+    #achievements {
         background-attachment: scroll !important;
     }
 }
@@ -19,7 +19,7 @@
     background-color: rgba(26, 30, 35, 0.85);
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 #achievements .wrapper {
