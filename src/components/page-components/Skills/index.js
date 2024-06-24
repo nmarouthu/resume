@@ -21,7 +21,6 @@ const Skills = (props) => {
         {"label": "Collaboration", "value": "95"},
         {"label": "Leadership", "value": "80"},
         {"label": "Motivation", "value": "90"},
-        {"label": "Creativity", "value": "70"},
         {"label": "Innovation", "value": "75"}
     ]
 
