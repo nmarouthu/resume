@@ -61,27 +61,30 @@ const Header = (props) => {
         } else {
             document.getElementsByTagName("body")[0].classList.add("no-scroll");
         }
-        setNavBarOpen(!navBarOpen);
+
     }
 
     return (
-        <header className="header" {...props}>
-            <nav className={navBarOpen ? "global-nav is-open" : "global-nav"}>
-                <h3 className="title">Naveena Marouthu</h3>
-                <div className="global-nav-menu">
-                    <ul>
-                        { menuItems && menuItems.map(menuItem => (
-                            <li key={menuItem.link} className="global-nav-menu-item">
-                                <a href={`${menuItem.link}`} onClick={(e) => handleMenuClick(e)} >{menuItem.displayName}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </nav>
-            <div className={navBarOpen ? "nav-bar is-open" : "nav-bar"} onClick={() => handleHamburgerMenuClick()}>
-                <i className="fa-solid fa-bars"></i>
+        <>
+            <div className="nav-bar" onClick={(e) => setNavBarOpen(!navBarOpen)}>
+                {navBarOpen && <i className="fa-solid fa-xmark"></i> }
+                {!navBarOpen && <i className="fa-solid fa-bars"></i> }
             </div>
-        </header>
+            <header className="header" {...props}>
+                <nav className={navBarOpen ? "global-nav is-open" : "global-nav"}>
+                    <h3 className="title">Naveena Marouthu</h3>
+                    <div className="global-nav-menu">
+                        <ul>
+                            { menuItems && menuItems.map(menuItem => (
+                                <li key={menuItem.link} className="global-nav-menu-item">
+                                    <a href={`${menuItem.link}`} onClick={(e) => handleMenuClick(e)} >{menuItem.displayName}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </>
     )
 }
 export default Header;
